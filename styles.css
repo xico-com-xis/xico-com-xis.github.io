@@ -143,10 +143,9 @@ body {
 }
 
 .profile-photo {
-    width: 240px;
+    width: 216px;
     height: 240px;
     border-radius: 6px;
-    object-fit: cover;
 }
 
 /* Main content */
