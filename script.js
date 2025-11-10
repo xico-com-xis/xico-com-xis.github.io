@@ -1,8 +1,6 @@
 // Enhanced profile page functionality
 document.addEventListener('DOMContentLoaded', function() {
-    // Update last updated date
-    updateLastUpdated();
-    
+   
     // Add smooth scrolling for internal links
     addSmoothScrolling();
     
@@ -21,15 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add show more projects functionality
     addShowMoreProjects();
 });
-
-function updateLastUpdated() {
-    const lastUpdatedElement = document.getElementById('last-updated');
-    if (lastUpdatedElement) {
-        const now = new Date();
-        const options = { year: 'numeric', month: 'long' };
-        lastUpdatedElement.textContent = now.toLocaleDateString('en-US', options);
-    }
-}
 
 function addSmoothScrolling() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
